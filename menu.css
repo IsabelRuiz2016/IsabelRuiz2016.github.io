@@ -1,55 +1,60 @@
-ul#menu {
- background: #005883;
- width: 940px;
- float:left;
- padding: 5px;
-}
+* ^{
+   padding:0px;
+   margin:0px;
+  }
   
-ul#menu li {
- color: #EBEDF3;
- float: left;
- list-style: none;
- margin: 0% 5%;
+#header {
+			margin:auto;
+			width:500px;
+		}
+
+ul, ol {
+		list-style:none;
+
 }
-  
-ul#menu li:hover{
- color: #051A4D;
- cursor:pointer;
+
+.nav li a {
+			background-color:#000;
+			color:#fff;
+			text-decoration:none;
+			padding:10px 15px;
+			display:block;
+} 
+
+.nav  li a:hover {
+			background-color:#434343;
+
 }
-  
-ul#menu ul {
- display: none;
- position: absolute;
- top: 49px;
- background: #005883;
- color: #EBEDF3;
- padding: 5px 0px 5px 5px;
- margin: 0;
- }
-  
-ul#menu ul li{
- float: left;
- color: #EBEDF3;
- width:100%;
- margin:2% 0%;
+
+.nav > li {
+			float:left;
+
+
 }
- 
- 
-ul#menu ul li a{
- color: #EBEDF3;
+
+.nav  li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
 }
-  
-ul#menu ul li a:hover{
- color: #EBEDF3;
- cursor:pointer;
+
+.nav li:hover > ul {
+					display:block;
 }
-  
-ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.iehover ul ul,ul#menu li.iehover ul ul ul {
- display: none;
- cursor:pointer;
+
+.nav li ul li {
+			position:relative;
 }
-  
-ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
- display: block;
- cursor:pointer;
+
+.nav li ul li ul {
+			right:-140px;
+			top:0px;
 }
+H1 
+{ font-size:18px; font-family:Angsana New Bold; color:#005883 }
+
+H2 
+{ font-size:16px; font-family:Angsana New; color:#005883 }
+
+H3
+{ font-size:14px; font-family:Angsana New; color:#005883 }
