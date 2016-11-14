@@ -1,0 +1,18 @@
+{
+  "STYLESHEET_URL": "css/sco.css",
+  "VIDEOSCO_JS": "https://cloud.scorm.com/sc/other/VideoSco/scripts/scotube2004.js",
+  "VIDEO_LIB_JS": "scripts/swfobject.js",
+  "BOOKMARK_FREQUENCY": "10",
+  "COMPLETION_CUSHION": "3",
+  "REPORT_SATISFACTION": "false",
+  "VIDEO_ID": "yoeV4Ex8C8U",
+  "VIDEO_TITLE": "Base de Datos #1| Conceptos Básicos",
+  "VIDEO_AUTHOR": "CodigoCompilado",
+  "VIDEO_DESC": "Éste es el primer vídeo de nuestro curso de base de datos, te enseñaremos los conceptos básicos que debemos saber para poder crear nuestras bases de datos.\r\n\r\nNo olvides suscribirte para tomar todos los cursos que estaremos impartiendo\r\n\r\nVisita nuestro canal: http://bit.ly/CodigoCompilado\r\n\r\nNuestras redes sociales:\r\n\r\nTwitter:       https://twitter.com/CodigoCompilado\r\nFacebook:  http://bit.ly/CodigoCompiladoFacebook\r\n\r\nCorreo:\r\n \r\ncodigocompilado@gmail.com",
+  "SAVED_MARKS_TITLE": "Saved Places",
+  "SAVE_MARK_BUTTON_TEXT": "Mark This Location",
+  "GOTO_BOOKMARK_TEXT": "Go",
+  "VIDEO_AUTOPLAY": "true",
+  "VIDEO_CONTROLS_BGCOLOR": "#000000",
+  "COURSE_COMPLETE_MESSAGE": "Course Complete"
+}

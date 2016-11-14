@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Copyright Rustici Software, LLC 2009-2010 All Rights Reserved -->
+<head>
+    <title>Video Sco</title>
+    <script type="text/javascript" src="scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+    
+	function ScoVideoInit(configFile){
+		$.ajax({
+	      	type: "GET",
+	      	url: configFile,
+	      	dataType: 'json',
+	      	success: function(data) {
+				var config = data;
+	          	$.getScript(config.VIDEOSCO_JS,function(){
+                    VO = new VideoObject(config);
+                    window.onunload = VO.Finish;
+                });
+    
+	      	},
+	      	error: function(xhr, ajaxOptions, thrownError) {
+	          	console.log('error loading data',this,arguments);
+				alert('There was an error loading the configuration file - '+thrownError);
+				
+	      	}
+	  	});	
+	}
+	
+    </script>
+	
+
+</head>
+<body id="page">
+	<div id="MainView">
+	    <div id="scowrapper">
+			<div id="logo"></div>
+	        <div id="videoTitle"></div>
+	        <div class="author">
+	            Author:<span id="author"></span>
+	        </div>
+			<div class="clear"></div>
+	        <div id="videoPlayer"></div>
+	        <div id="videoDesc"></div>
+	        <div id="resultDiv"></div>
+	        <div id="markButtonDiv"></div>
+	        <div id="markInput"></div>
+	        <div id="marks">
+	            <div id="savedMarksTitle">Saved Locations</div>
+	        </div>
+	    </div>
+		<div class="clear"></div>
+	</div>
+	<script>
+		ScoVideoInit('config.json');
+	</script>
+</body>
+</html>

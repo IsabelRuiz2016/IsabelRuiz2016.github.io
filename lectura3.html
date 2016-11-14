@@ -2,35 +2,121 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>Multimedia</title>
-<link rel=stylesheet href="style.css" type="text/css">  
+<title>Normalizacion de base de datos</title>
+<link rel=stylesheet href="menu.css" type="text/css">  
 
 <body>
         <header>
             <img src="..\bannercompleto.png" width="1309" height="157" alt="logo"  /> 
-            <h1><CENTER>Contenido Multimedia</CENTER>
-           <link rel=stylesheet href="style.css" type="text/css">    
-<nav>
-        <ul id="menu">
-         <li><a href="index.html">Inicio</a></li>
-               
-        </ul>
-      </nav>
+            <h1><CENTER>Normalizacion de base de Datos</CENTER>
+                      
         </header>
 
-        
+<p>
+<h1> Normalizacion de una base de Datos </H1>
+<h3><br>El proceso de normalización de una base de datos consiste en aplicar una serie de reglas 
+<br>a las relaciones obtenidas tras el paso del modelo E-R (entidad-relación) al modelo relacional.</h3>
+<h2><br>Objetivo de la normalización</h2>
 
+<h2>Las bases de datos relacionales se normalizan para:</h2>
+
+<h2>° Evitar la redundancia de los datos.
+<br>° Evitar problemas de actualización de los datos en las tablas.
+<br>° Proteger la integridad de los datos.
+<br>En el modelo relacional es frecuente llamar tabla a una relación, aunque para que una tabla bidimensional sea considerada como una relación tiene cumplir con algunas restricciones:
+<br> 
+<br>
+° Cada columna debe tener su nombre único.
+<br> ° No puede haber dos filas iguales. No se permiten los duplicados.
+<br> ° Todos los datos en una columna deben ser del mismo tipo.</h2>
+<br>
+<h2>Claves</h2>
+<br><h3>Claves Ajenas<br>
+
+Cuando se tienen dos tablas o más, una clave ajena es aquella columna de una tabla que hace referencia a una clave primaria de otra tabla.<br>
+
+También existe el caso de Relaciones Autoreferenciales. Sucede cuando en la misma relación se tiene una clave ajena que hace referencia a la clave primeria de la misma relación. Por otro lado las claves ajenas pueden tomar valores nulos.
+<br>
+<h2>Regla de Integridad Referencial</h2>
+
+<h3>La base de datos no debe contener valores de clave ajena sin concordancia. Así como los valores de clave primaria representan identificadores de entidades, <br>
+las claves ajenas representan referencia a entidades.
+<br>
+La regla dice: Si B hace referencia a A entonces A debe existir. Surgen los siguientes dos puntos:<br>
+
+La integridad referencial exige concordancia en las claves ajenas, con las claves primerias, no con la claves alternativas.
+Los conceptos de clave ajena e integridad referencial se definen uno en termino del otro.</h3>
+
+<h2>Clave candidata</h2>
+<br>
+<h3>Por lo general la forma más eficiente y segura para escoger o hacer la clave primaria es poniendo un número y aumentando éste a medida que se van añadiendo filas, pero si de casualidad se diera el caso de que existan varias claves candidatas de las cuales se deba escoger la clave primaria, esta elección se hace utilizando el sentido común.
+
+<h2>Claves alternativas</h2>
+<br>
+<h3>Son aquellas claves candidatas que no han sido elegidas.</h3>
+
+<h2>Clave simple</h2>
+<br>
+<h3>Es una clave que esta compuesta solo de un atributo.
+
+<h2>Clave compuesta</h2>
+<br>
+
+<h3>Es una clave que esta compuesta por más de un atributo.</h3>
+<br>
+<h2>Formas Normales</h2>
+<br>
+<h3>Las primeras tres formas normales son suficientes para cubrir las necesidades de la mayoría de las bases de datos. El creador de estas 3 primeras formas normales (o reglas) 
+<br>fue Edgar F. Codd, éste introdujo la normalización en un artículo llamado A Relational Model of Data for Large Shared Data Banks.</h3>
+<br>
+<h2>Primera Forma Normal (1FN)</h2>
+
+<h3>Sea α un conjunto de atributo perteneciente (Є) a la relación R, en donde R está en la Primera Forma Normal si todos los atibutos α[n] son atómicos, es decir no pueden seguir dividiéndose. Por ejemplo:<br>
+
+La Relación:
+<br>
+cursos: nombre, código, vacantes, horario, bibliografía
+<br>
+Queda después de aplicar la Forma Normal 1 de la siguiente manera:<br>
+
+cursos1: nombre, código, vacantes horario1: código, día, módulo bibliografia1: código, nombre, autor</h3>
+<br>
+<h2>Segunda Forma Normal (2FN)</h2>
+<br>
+<h3>Dependencia completa. Esta en 2FN si esta en 1FN y si sus atributos no principales dependen de forma completa de la clave principal.</h3>
+<br>
+<h2>Tercera Forma Normal (3FN)</h2>
+
+<br><h3>Está en segunda forma normal y todo atributo no primo es implicado por la clave primaria en una secuencia no transitiva.Se eliminan las dependencias transitivas.</h3>
+
+<h2>Forma normal de Boyce-Codd (FNBC)</h2>
+<br>
+<h3>Una tabla está en FNBC sí y sólo sí las únicas dependencias funcionales elementales son aquellas en las que la clave primaria determinan un atributo.</h3>
+
+<h2>Cuarta Forma Normal (4FN)</h2>
+<br>
+<h3>Está en forma normal de Boyce-Codd y se eliminan las dependencias multivaluadas y se generan todas las relaciones externas con otras tablas u otras bases de datos.
+<br></h3>
+<h2>Quinta Forma Normal (5FN)<br></h2>
+
+<h3>Está en cuarta forma normal y toda dependencia-join viene implicada por claves candidatas.</h3>
+<br>
+<img src= "normalizacion.png">
+</p>
    
 
 
       
+<br>
+<br>   
+     
 
-
-      <>
-        <footer><link rel=stylesheet href="style.css" type="text/css"> 
-                <a href="http://www.Unad.edu.co">www.unad.edu.co</a>
-        </footer>
-
+         <li><a href="index.html">Inicio</a></li>
 
 </body>
+<br>
+<br>
+   <footer><link rel=stylesheet href="menu.css" type="text/css"> 
+                <a href="http://www.Unad.edu.co">www.unad.edu.co</a>
+        </footer>
 </html>
